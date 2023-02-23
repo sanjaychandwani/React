@@ -1,17 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import name from './Counter (first class)/App'
+import App from './Counter (first class)/App'
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// let name ="sanjay";
+
+// let a = 100;
+// let b =200;
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+  <>
+  
+  <h1 id="yash bhai"> Hello {name}</h1>
+
+  {/* <h2>  Sum is <Sum num1 ={a} num2={b}/> </h2> */}
+
+
+<App/>
+
+
+  
+  </>
+  
+  
+        
+  
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
