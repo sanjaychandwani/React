@@ -1,7 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import name from './Counter (first class)/App'
-import App from './Counter (first class)/App'
+// import Home from './Tesla clone/Home';
+// import App from './Axios/App';
+// import Tabs from './Tabbing/Tabs';
+// import {Todo} from './To Do List/Todo'
+// import name from './Counter (first class)/App'
+// import App from './Counter (first class)/App'
+// import App from './Routing/App'
+// import Movify from './Movify/Movify'
+import App from './ContextApi/App';
+
+
 
 
 
@@ -16,15 +25,24 @@ root.render(
 
   <>
   
-  <h1 id="yash bhai"> Hello {name}</h1>
+  {/* <h1 > Hello {name}</h1> */}
 
   {/* <h2>  Sum is <Sum num1 ={a} num2={b}/> </h2> */}
 
 
-<App/>
+{/* <App/> */}
 
+{/* <Todo/> */}
 
-  
+{/* <Home /> */}
+
+{/* <Tabs/> */}
+
+{/* <FetchAxios/> */}
+
+{/* <App/> */}
+  <App/>
+{/* <Movify/> */}
   </>
   
   

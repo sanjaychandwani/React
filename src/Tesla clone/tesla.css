@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    position: fixed;
+    width: 100%;
+    top: 10px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section .Model {
+    display: inline-block;
+    margin-top: 7rem;
+    line-height: 2.5rem;
+}
+
+.Model h1 {
+    font-size: 3rem;
+}
+
+.Order {
+    display: inline-block;
+    margin-bottom: 4rem;
+
+
+}
+
+.menu {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 260px;
+    padding: 5rem 1rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.menu li {
+    padding: 0.75rem;
+}
+
+section .Order a:nth-of-type(1) {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.75rem 5rem;
+    border-radius: 10px;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+section .Order a:nth-of-type(2) {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.75rem 4rem;
+    border-radius: 10px;
+    color: black;
+    margin-left: 0.5rem;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.arrow {
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    animation: 2s 0s infinite ease arrow;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .Models {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .Order {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Order a {
+        margin: 1rem 0;
+    }
+    section .Order a:nth-of-type(1){
+        margin-right: 0;
+    }
+    section .Order a:nth-of-type(2){
+        padding: 0.75rem 4.25rem;
+        margin-left: 0;
+    }
+    .shop li:first-of-type{
+        display: none;
+    }
+    .shop li:nth-of-type(2){
+        display: none;
+    }
+}
